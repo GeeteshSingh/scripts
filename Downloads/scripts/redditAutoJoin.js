@@ -9,17 +9,17 @@ In this case, simply split the link into two or three links.
 Enter: 
 */
 
-const JoinedSub = () => {
-  let btn = document.querySelector(".add.active");
-  if (btn) {
-    btn.click();
-    setTimeout("joined()", 500);
-  } else {
-    alert("You have subscribed all subreddits successfully");
-    return;
-  }
-};
-setTimeout("joined()", 500);
+const sub = () => {
+	let btn = document.querySelector(".add.active");
+	if(btn) {
+		btn.click();
+		setTimeout('sub()', 500);
+	} else {
+		alert("You have subscribed to all the subreddits successfully");
+		return;
+	}
+}
+setTimeout('sub()', 500);
 
 //7. This will subscribe you to all of the subreddits on the page.
 
